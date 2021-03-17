@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+/* * {
+   box-sizing: border-box;
+} */
+
+body {
+   font-family: 'Ranchers', sans-serif;
+   height: 100vh;
+   margin: 0;
+   padding-left: 50px;
+   background-color: #d1aeae;
+
+}
+
+h1 {
+   font-size: 36px;
+   text-align: center;
+   color: #0969A2;
+   letter-spacing: 3px;
+
+}
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 90vw;
+
+}
+
+.panel {
+
+   background: center center /cover no-repeat;
+   height: 80vh;
+   border-radius: 60px;
+   color: #fff;
+   cursor: pointer;
+   flex: 0.5;
+   margin: 10px;
+   position: relative;
+   transition: 0.7s ease-in;
+}
+
+.panel h3 {
+   font-size: 24px;
+   color: #fff;
+   position: absolute;
+   bottom: 30px;
+   left: 30px;
+   margin: 0;
+   opacity: 0;
+
+}
+
+.panel.active {
+   flex: 4;
+
+}
+
+.panel.active h3 {
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.3s;
+}
+
+@media(max-width: 480px) {
+   .wrapper {
+      width: 100vw;
+   }
+
+   .panel:nth-of-type(5),
+   .panel:nth-of-type(6) {
+      display: none;
+   }
+}
